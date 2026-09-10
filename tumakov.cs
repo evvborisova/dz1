@@ -26,6 +26,7 @@ namespace tumakov
             char r = (char)(l + 1);
             Console.WriteLine($"следующая буква {r}");
             //4
+            Console.WriteLine("задание 4");
             Console.Write("введите коэффициент a ");
             int A = Convert.ToInt32(Console.ReadLine());
             Console.Write("введите коэффициент b ");
