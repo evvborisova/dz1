@@ -177,15 +177,15 @@ namespace latypova
             Console.WriteLine("***"); 
             Console.ResetColor();
             //20
-            Console.WriteLine("#20");
+            Console.WriteLine(" задание 20");
             string random12 = $"{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}{new Random().Next(0, 9)}";
             int sum = 0;
             for (int v = 0; v < 12; v += 2)
             {
                 sum += Convert.ToInt32(random12[v]) * 3 + Convert.ToInt32(random12[v + 1]);
             }
-            Console.WriteLine($"Контрольная цифра  {10 - sum % 10}");
-            Console.WriteLine("Введите цифры -> ");
+            Console.WriteLine($"контрольная цифра  {10 - sum % 10}");
+            Console.WriteLine("введите цифры -> ");
 
             string ls = $"{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}{Console.ReadLine()}";
             sum = 0;
